@@ -20,6 +20,5 @@ class ListItem(generics.ListCreateAPIView):
   serializer_class=ItemSerializer
 
 class DetailItem(generics.RetrieveUpdateDestroyAPIView):
-  permission_classes=(permissions.IsAuthenticated)
   queryset=Item.objects.all()
   serializer_class=ItemSerializer
