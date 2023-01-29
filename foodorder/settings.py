@@ -33,11 +33,11 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK={
     'DEFAULT_AUTHENTICATION_CLASSES':[
-        'rest_framework.authentication.TokenAuthentication'],
+        'rest_framework.authentication.TokenAuthentication',],
 }
 
 CORS_ALLOWED_ORIGINS=[
-
+    "https://web.postman.co"
 ]
 
 CORS_ALLOW_METHODS=[
